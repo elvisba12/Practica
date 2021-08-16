@@ -49,4 +49,4 @@ jobs:
           heroku_api_key: $ {{secrets.HEROKU_API_KEY}} 
           heroku_app_name: "your_app_name" 
           heroku_email: "elvis.ba12@gmail.com"
-          usedocker: true
+          usedocker: false
