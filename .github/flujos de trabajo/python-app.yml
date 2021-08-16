@@ -34,3 +34,19 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+nombre: Implementar
+en: 
+  empujar: 
+    ramas: 
+      - maestro
+jobs: 
+  build: 
+    runs-on: ubuntu-latest 
+    steps: 
+      - uses: actions / checkout @ v2 
+      - uses: akhileshns/heroku-deploy@v3.0.0 
+        con: 
+          heroku_api_key: $ {{secrets.HEROKU_API_KEY}} 
+          heroku_app_name: "your_app_name" 
+          heroku_email: "elvis.ba12@gmail.com"
+          usedocker: true
